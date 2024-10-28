@@ -11,15 +11,17 @@ type Printer struct {
 }
 
 func NewPrinter() *Printer {
-	return &Printer{
-		Output: os.Stdout,
-	}
+	return &Printer{Output: os.Stdout}
 }
 
 func (p *Printer) Print() {
-	fmt.Fprintln(p.Output, "Hello, world")
+	fmt.Fprintln(p.Output, "Hello, world!!!")
 }
 
 func Main() {
 	NewPrinter().Print()
+}
+
+func PrintTo(w io.Writer) {
+	fmt.Fprintln(w, "Hello, world!")
 }

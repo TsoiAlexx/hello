@@ -1,3 +1,3 @@
-module github.com/TsoiAlexx/hello
+module github.com/TsoiAllex/hello
 
-go 1.21
+go 1.21.6
